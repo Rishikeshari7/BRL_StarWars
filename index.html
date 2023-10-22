@@ -8,23 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>Star Wars</h1>
+        <h1>Star Wars API</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for films, vehicles, people, or starships...">
+            <button id="search-button">Search</button>
     </header>
-  <main>
+    <div class="container">
+        <div id="loader" class="loader"></div>
+        <div id="results" class="results"></div>
+        <!-- -------------------------------------- -->
+        </div>
+        <button id="download-button">Download Data</button>
 
-    <div id="endpointButtons">
-        <button onclick="fetchData('people',1)">People</button>
-        <button onclick="fetchData('planets',1)"> Planets</button>
-        <button onclick="fetchData('films',1)">Films</button>
-        <button onclick="fetchData('starShips,1')">StarShips</button>
-    </div>
-
-    <ul id="Content"></ul>
-    <div id="pagination">
-        <button id="prevBtn" onclick="fetch('people','prev')">Previous</button>
-        <button id="nextBtn" onclick="fetch('people','next)">Next</button>
-    </div>
-  </main>
   <hr>
   <footer><p><span class="ft-ele">&copy;</span>2023 STarWars APi  ~ All Rights Reserverd <span class="ft-ele">&reg;</span></p></footer>
     

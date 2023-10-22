@@ -1,87 +1,98 @@
 body {
-    font-family: 'Arial', sans-serif;
-    /* background-color: #f5f5f5; */
-    /* background-image: url(./8c247fbf0059d5877645138543a0cc71.jpg); */
-    background-image: url(./15\ Free\ Celestial\ Wallpapers\ For\ Your\ Phone\ -\ The\ Violet\ Journal.jpeg);
-    background-position: center;
-    background-size: cover;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
     justify-content: center;
-}
-
-header {
-    /* background-color: #333; */
-    color: white;
-    font-size:3em;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
     text-align: center;
-    padding: 1rem;
-}
-h1{
-    padding-top: 0%;
-    margin-top: 0%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-    text-decoration: dashed;
-}
-main {
-    margin-top: 2rem;
-    max-width: 800px;
-    /* background-color: white; */
-    
-    border-radius: 8px;
-}
-#Content{
-    /* background-color: #333; */
-    opacity: 1;
-    color: aliceblue;
-    overflow: hidden;
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    /* gap: 2em; */
-}
-ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-li {
-   
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 0.5rem 0;
-    padding: 1rem;
+header {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
 }
 
-#pagination {
+h1 {
+    font-size: 2.5rem;
+}
+
+.search-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 1rem 0;
+    margin-top: 20px;
 }
 
-button {
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: white;
+input[type="text"] {
+    padding: 10px;
     border: none;
-    cursor: pointer;
-    margin: 0 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
 }
-footer{
-    color: #ccc;
-}
-#endpointButtons{
-    text-align: center;
-}
-/* #bigBox */
 
-@media screen and (max-width: 600px){
-    #Content{
-        display: flex;
-        flex-direction: column;
-    }
+#search-button {
+    background-color: #2575cbaa;
+    /* background-color: #2d7acd; */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#download-button{
+    background-color: #007bffc7;
+    color: #fff;
+    border: none;
+    padding: 5px 3px;
+    border-radius: 5px;
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all;
+    transition-duration: .5s;
+}
+#download-button:hover{
+   transform: scale(1.1);
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.results {
+    margin-top: 20px;
 }
